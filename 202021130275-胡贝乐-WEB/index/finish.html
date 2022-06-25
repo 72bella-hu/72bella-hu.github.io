@@ -13,12 +13,15 @@
     margin: 0;
     padding: 0
 }
-    .finsh {
+.finsh {
         text-align: center;
         font-size: 24px;
         width: 100%;
         position: relative;
         box-sizing: border-box;
+        /* 距离调整 */
+        left: 400px;
+        top: 200px;
     }
 .finshimg{
     position: absolute;
@@ -28,24 +31,101 @@
     height: 800px;
 }
 
-/* 设置提交完成的文字 */
-.finishword{
-    position: absolute;
-    top:300px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* 设置字体大小和颜色 */
-    font-size: 100px;
-    color: blue;
 
+/* 表格的设置 */
+table {
+  margin-left:      20px;
+  margin-right:     20px;
+  /* 边框为实心红色 */
+  border:red solid;
+  caption-side:     bottom;
+  border-collapse:  collapse;
+}
+
+table table th {
+  background-color: rgb(23, 84, 116);
+}
+
+td, th {
+  border:           thin dotted gray;
+  padding:          5px;
+}
+
+th {
+  background-color: #cc6600;
 }
 </style>
 
 <body>
+    <img class="finshimg" src="../imag/home3.jpg" alt="">
+  
     <div class="finsh">
-        <img class="finshimg" src="../imag/home1.jpg" alt="">
-        <span class="finishword">提交完成！</span>
-        
+    <table>
+        <caption>
+         提交完成，并获得以上信息！
+        </caption>
+        <tr>
+            <!-- 第一行内容 -->
+          <th>十七</th>
+          <th>日期</th>
+          <th>天气</th>
+          <th>心情状况</th>
+          <th>地区编码</th>
+        </tr>
+            <!-- 第二行 -->
+        <tr>
+          <td>十七爱吃美食</td>
+          <td>三月份</td>
+          <td>阴雨天</td>
+          <td>好</td>
+          <td>6627361</td>
+        </tr>
+        <!-- 第三行 -->
+        <tr>
+          <td>十七想要去旅行</td>
+          <td>八月份</td>
+          <td>大晴天</td>
+          <td>不是一般的好</td>
+          <td>1114</td>
+        </tr>
+        <!-- 第四行 -->
+        <tr>
+          <td>十七在寻找知己</td>
+          <td>九月份</td>
+          <td>小雨转多云</td>
+          <td>非常非常的好</td>
+          <td>345，654</td>
+         
+        </tr>
+
+        <!-- 第五行 -->
+        <tr>
+          <td>十七会在回忆过往</td>
+          <td>十一月份</td>
+          <td>大雨</td>
+          <td>好的不得了</td>
+          <td>1352，903</td>
+         
+        </tr>
+        <!-- 第六行 -->
+        <tr>
+          <td>十七在畅想未来</td>
+          <td>一月份</td>
+          <td>天气晴朗</td>
+          <td>好的不得了</td>
+          <td>09287</td>
+         
+        </tr>
+        <!-- 第七行 -->
+        <tr>
+          <td>祝你永远快乐</td>
+          <td>二月份</td>
+          <td>天气较好</td>
+          <td>好的不得了</td>
+          <td>480</td>
+         
+        </tr>
+      </table>
     </div>
 </body>
 

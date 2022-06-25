@@ -1,8 +1,13 @@
-
+/* 首先是整体的布局 */
+/* margin (外边距)属性定义元素周围的空间。 margin 清除周围的（外边框）元素区域 */
+/* 当元素的 padding（填充）内边距被清除时，所释放的区域将会受到元素背景颜色的填充。 */
+/* 单独使用 padding 属性可以改变上下左右的填充。 */
 body {
     margin: 0;
     padding: 0;
+    /* 设置背景图片，并且无重复 */
     background: url("../imag/home3.jpg") no-repeat;
+    /* background-size属性指定背景图像大小，而cover是指铺满整个区域 */
     background-size: cover;
 }
 
@@ -46,6 +51,8 @@ body {
 .one:hover {
     color: rgb(6, 173, 151);
 }
+
+
 .ribbon {
 display: flex;
 justify-content: center;
